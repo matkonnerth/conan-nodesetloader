@@ -1,8 +1,6 @@
-#include <open62541/server.h>
-#include <open62541/server_config_default.h>
+#include <NodesetLoader/NodesetLoader.h>
 
 int main()
 {
-  UA_Variant var;
-  UA_Variant_init(&var);
+  NodesetLoader* loader = NodesetLoader_new(nullptr, nullptr);
 }
