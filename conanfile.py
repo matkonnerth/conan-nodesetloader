@@ -1,13 +1,13 @@
 from conans import ConanFile, CMake, tools
 
-class Open62541Conan(ConanFile):
+class NodesetLoaderConan(ConanFile):
     name = "nodesetloader"
     version = "0.1"
     license = "Mozilla Public License v2.0"
     url = "https://github.com/matkonnerth/nodesetLoader"
     homepage = "https://github.com/matkonnerth/nodesetLoader"
     description = "open source C99 implementation for loading opc ua nodesets"
-    topics = ("opcua", "open62541")
+    topics = ("opcua", "open62541", "xmlimport")
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
     requires = ("open62541/master@matkonnerth/testing", "libxml2/2.9.9")
