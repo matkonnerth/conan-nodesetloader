@@ -1,10 +1,10 @@
-# conan-open62541 [![Build Status](https://travis-ci.org/matkonnerth/conan-open62541.svg?branch=master)](https://travis-ci.org/matkonnerth/conan-open62541)
+# conan-nodesetloader
 
 ## Conan
 
 conan is a package manager for C/C++ projects. More infos on conan on https://conan.io/
 
-This repository provides the recipe for creating a conan package out of the open62541 sources.(https://github.com/open62541/open62541)
+This repository provides the recipe for creating a conan package out of the nodesetloader sources.(https://github.com/matkonnerth/nodesetLoader)
 
 Build for Linux is provided via Travis CI.
 
@@ -17,4 +17,4 @@ Packages can retrieved via the lightweight conan client, therefore the repositor
 conan remote add openRepo https://api.bintray.com/conan/matkonnerth/cpprepo
 
 An example for using the open62541 conan package can be found here:
-https://github.com/matkonnerth/conan-open62541-example
+https://github.com/matkonnerth/modernOPC
