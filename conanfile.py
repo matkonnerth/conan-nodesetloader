@@ -2,7 +2,7 @@ from conans import ConanFile, CMake, tools
 
 class NodesetLoaderConan(ConanFile):
     name = "nodesetloader"
-    version = "0.1"
+    version = "master"
     license = "Mozilla Public License v2.0"
     url = "https://github.com/matkonnerth/nodesetLoader"
     homepage = "https://github.com/matkonnerth/nodesetLoader"
@@ -18,8 +18,6 @@ class NodesetLoaderConan(ConanFile):
 
     def source(self):
         self.run("git clone https://github.com/matkonnerth/nodesetLoader.git")
-        self.run("cd nodesetLoader && git fetch")
-        self.run("cd nodesetLoader && git checkout refactorCMake")
 
     def _configure_cmake(self):
         cmake = CMake(self)
@@ -34,7 +32,6 @@ class NodesetLoaderConan(ConanFile):
 
     def package(self):
         cmake = self._configure_cmake()
-        cmake.definitions["CMAKE_INSTALL_PREFIX"] = "./"
         cmake.install()
         cmake.patch_config_paths()
 
