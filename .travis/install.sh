@@ -23,4 +23,4 @@ pip install conan --upgrade
 pip install conan_package_tools
 
 conan user
-conan remote add cpprepo https://api.bintray.com/conan/matkonnerth/cpprepo false
+conan remote add upload_repo https://api.bintray.com/conan/matkonnerth/cpprepo false
