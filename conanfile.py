@@ -12,6 +12,7 @@ class NodesetLoaderConan(ConanFile):
     generators = "cmake"
     requires = ("open62541/master@matkonnerth/testing", "libxml2/2.9.9")
     default_options = {"libxml2:shared": True}
+    build_policy = "missing"
 
     def configure(self):
         del self.settings.compiler.libcxx
